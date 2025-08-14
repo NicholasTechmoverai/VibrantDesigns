@@ -1,30 +1,18 @@
 <template>
-    <div class="dark:bg-gray-700 flex flex-row justify-between  p-5 w-full h-screen">
-      <Logo/>
-        <n-switch v-model:value="isDark" size="large" :round="false" class="-rotate-90">
-            <template #checked-icon>
-                <span class="rotate-90 p-1">
-                    On
-                </span>
-            </template>
-            <template #unchecked-icon >
-                <span class="rotate-90 p-1">
-                    off
-                </span>
-            </template>
-        </n-switch>
-
+    <div class="dark:bg-[#1A1A1A] text-[#EAEAEA] flex flex-col  p-5 w-full h-screen">
+        <n-space justify="space-between">
+            <Logo />
+            <GlobalCons />
+        </n-space>
+        <n-space vertical>
+            <Header />
+        </n-space>
     </div>
 </template>
 <script setup>
 import { ref, watch } from 'vue'
-import { useUserStore } from '../stateStore/user'
 import Logo from '../composables/Logo.vue'
-
-const userStore = useUserStore()
-const isDark = ref(userStore.theme === 'dark')
-watch(isDark, (val) => {
-    userStore.setTheme(val ? 'dark' : 'light')
-})
+import GlobalCons from '../composables/Globalcons.vue'
+import Header from './Header.vue'
 
 </script>
