@@ -3,6 +3,7 @@ import App from './App.vue'
 
 import 'uno.css'
 import '@unocss/reset/tailwind.css'
+import './style.css'
 
 import naive from 'naive-ui'
 

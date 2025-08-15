@@ -14,7 +14,7 @@ export const useUserStore = defineStore('userUseStore', () => {
 
   function setLang(value) {
     lang.value = value || 'en'
-    i18n.global.locale.value = lang.value
+    i18n.global.locale = lang.value
   }
 
   function setUser(userData) {

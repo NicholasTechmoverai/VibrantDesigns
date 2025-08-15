@@ -1,5 +1,5 @@
 <template>
-            <n-switch v-model:value="isDark" size="large" :round="false" class="-rotate-90">
+            <n-switch v-model:value="isDark" size="small" :round="false" class="-rotate-90">
             <template #checked-icon>
                 <span class="rotate-90 p-1">
                     On

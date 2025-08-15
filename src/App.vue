@@ -1,5 +1,5 @@
 <template>
-  <n-config-provider :theme="resolvedTheme">
+  <n-config-provider :theme="resolvedTheme" :theme-overrides="themeOverrides">
     <n-loading-bar-provider>
       <n-message-provider>
         <n-notification-provider>
@@ -14,7 +14,7 @@
 
 
 <script setup>
-import { computed } from 'vue'
+import { computed,ref } from 'vue'
 import { darkTheme } from 'naive-ui'
 import { useUserStore } from './stateStore/user'
 
@@ -22,4 +22,15 @@ const userStore  = useUserStore()
 const resolvedTheme = computed(() =>
   userStore.theme === 'dark' ? darkTheme : null
 )
+const colors = ['#18a058', '#4cafef', '#ffd700']
+const index = 2
+
+const themeOverrides = ref({
+  common: {
+    primaryColor: colors[index],
+    primaryColorHover: colors[index],
+    primaryColorPressed: colors[index],
+  }
+})
+
 </script>
