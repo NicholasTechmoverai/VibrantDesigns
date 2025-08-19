@@ -7,6 +7,11 @@
       <HeaderTop />
       <ExpertiseCard />
       <Creativity />
+      <About />
+      <Values />
+      <Team />
+      <Reviews />
+      <Brands />
     </main>
   </div>
 </template>
@@ -16,4 +21,9 @@ import Header from './Header.vue'
 import HeaderTop from './HeaderTop.vue'
 import ExpertiseCard from './ExpertiseCard.vue'
 import Creativity from './Creativity.vue'
+import About from './About.vue'
+import Values from './Values.vue'
+import Team from './Team.vue'
+import Reviews from './Reviews.vue'
+import Brands from './Brands.vue'
 </script>

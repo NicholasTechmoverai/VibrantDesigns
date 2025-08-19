@@ -1,6 +1,5 @@
 <template>
     <div class="container mx-auto px-4 py-12 flex flex-col items-center gap-10">
-        <!-- Header Section -->
         <div class="text-center mb-16 max-w-4xl mx-auto">
             <n-gradient-text type="primary" size="16"
                 class="inline-flex items-center px-4 py-2 rounded-full bg-gray-100/80 dark:bg-gray-800/80 border border-brand/30 text-sm font-medium backdrop-blur-sm">
@@ -23,7 +22,6 @@
             </n-button-group>
         </div>
 
-        <!-- Cards Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
             <n-card v-for="(card, i) in tm('landingPage.creativity.cards')" :key="i" hoverable
                 class="transition-all duration-300 hover:shadow-lg dark:border-brand rounded-2xl min-w-[350px] overflow-hidden hover:scale-[1.01] relative"
@@ -70,7 +68,6 @@
             </n-card>
         </div>
 
-      <!-- Footer Button -->
 <n-button
   type="primary"
   size="large"

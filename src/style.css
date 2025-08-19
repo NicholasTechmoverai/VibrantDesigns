@@ -1,4 +1,9 @@
-:root {
+/* :root {
   --brand-color: #ffd700;
   --secondary-color: #b1b6b9ff;
+} */
+
+:root {
+  --brand-color: 255 215 0;     /* instead of #ffd700 */
+  --secondary-color: 177 182 185;
 }

@@ -6,10 +6,11 @@ export default defineConfig({
     presetIcons(),
     presetAttributify(),
   ],
-  theme: {
-    colors: {
-      brand: 'var(--brand-color)',
-      secondary: 'var(--secondary-color)',
-    },
+theme: {
+  colors: {
+    brand: 'rgb(var(--brand-color) / <alpha-value>)',
+    secondary: 'rgb(var(--secondary-color) / <alpha-value>)',
   },
+}
+
 })
