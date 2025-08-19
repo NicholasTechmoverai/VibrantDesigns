@@ -211,6 +211,7 @@ Today, we continue to push creative boundaries, embrace new technologies, and mo
 
         },
         letsCraft: {
+            vb:"Get in Touch",
             title: "Let's Create Something Amazing",
             description: "Ready to transform your brand? We'd love to hear about your project and explore how we can bring your vision to life.",
             craft: {
@@ -271,9 +272,16 @@ Today, we continue to push creative boundaries, embrace new technologies, and mo
                 budget: {
                     label: "Project Budget",
                     placeholder: "select Budget Range"
+                },
+                services: {
+                    label: "Services Needed",
+                    items: ['Web Design', 'Brand Identity', 'Graphic Design', 'UI/UX Design', 'Motion Graphics', 'Mobile App Design', 'Package Design', 'Digital Marketing', 'Other']
+                },
+                buttons: {
+                    send: "Send Message"
                 }
             },
-            services: ['Web Design', 'Brand Identity', 'Graphic Design', 'UI/UX Design', 'Motion Graphics', 'Mobile App Design', 'Package Design', 'Digital Marketing', 'other']
+           
         }
     }
 }

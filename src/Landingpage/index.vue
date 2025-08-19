@@ -12,6 +12,7 @@
       <Team />
       <Reviews />
       <Brands />
+      <Contact />
     </main>
   </div>
 </template>
@@ -26,4 +27,5 @@ import Values from './Values.vue'
 import Team from './Team.vue'
 import Reviews from './Reviews.vue'
 import Brands from './Brands.vue'
+import Contact from './Contact.vue'
 </script>
