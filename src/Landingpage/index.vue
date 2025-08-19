@@ -6,6 +6,7 @@
     <main class="flex flex-col items-center w-full px-4 sm:px-8 py-6">
       <HeaderTop />
       <ExpertiseCard />
+      <Creativity />
     </main>
   </div>
 </template>
@@ -14,4 +15,5 @@
 import Header from './Header.vue'
 import HeaderTop from './HeaderTop.vue'
 import ExpertiseCard from './ExpertiseCard.vue'
+import Creativity from './Creativity.vue'
 </script>

@@ -40,8 +40,13 @@
           >
             <span class="bg-brand/90 dark:bg-brand/80 size-2 min-h-2 min-w-2 rounded-full mt-2 mr-2"></span>
             <span class="text-gray-700 dark:text-gray-200">{{ feature }}</span>
+
           </li>
         </ul>
+        
+            <n-button type="primary" size="small" class="my-5 w-full">
+                {{ tm('landingPage.expertiseCard.lm') }}
+            </n-button>
       </div>
     </div>
 

@@ -17,6 +17,7 @@ export default {
         },
         expertiseCard: {
             vb: 'Our Expertise',
+            lm:"Learn More",
             title: "Services That Elevate",
             description: "From concept to completion, we provide comprehensive design services that transform your vision into powerful visual experiences.",
             services: [
@@ -87,6 +88,47 @@ export default {
                     "Content Strategy"
                 ]
             }
+        },
+        creativity:{
+            vb:"Our Work",
+            title:"Creative Portfolio",
+            subtitle:"Explore our latest projects and see how we've helped brands create memorable experiences that drive results.",
+            buttons:["all","Brand Identity","Web Design","Mobile Deign","Package Design","Digital Marketing"],
+            cards:[
+                {
+                    tp:"Brand Identity",
+                    title:"Startup Identity System",
+                    subtitle:"Complete visual identity for a tech startup including guidelines and applications.BrandingTech Startup",
+                    year:"2023"
+                },
+                         {
+                    tp:"Digital Marketing",
+                    title:"Wellness Brand Campaign",
+                    subtitle:"Comprehensive digital campaign including social media assets and video content.",
+                    year:"2024"
+                },   {
+                    tp:"Web Design",
+                    title:"Digital Agency Website",
+                    subtitle:"Modern, interactive website showcasing creative portfolio with advanced animations.",
+                    year:"2024"
+                },   {
+                    tp:"Package Design",
+                    title:"Artisan Coffee Roasters",
+                    subtitle:"Sustainable packaging design that reflects the artisanal quality and eco-friendly values.",
+                    year:"2023"
+                },   {
+                    tp:"Mobile Design",
+                    title:"TechFlow Mobile App",
+                    subtitle:"User-centric mobile app design for a fintech startup with focus on simplicity and security.",
+                    year:"2024"
+                },   {
+                    tp:"Brand Identity",
+                    title:"Luxe Fashion Brand",
+                    subtitle:"Complete rebrand for a premium fashion house including logo, packaging, and digital presence.",
+                    year:"2024"
+                }
+            ],
+            footerButton:"View All Projects"
         }
     }
 }
