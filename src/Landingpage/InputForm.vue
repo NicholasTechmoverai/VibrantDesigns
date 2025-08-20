@@ -1,62 +1,39 @@
 <template>
   <div class="text-center mb-16 max-w-5xl mx-auto border rounded-2xl p-4 border-brand/30">
-    <n-gradient-text
-      type="primary"
-      size="16"
-      class="inline-flex items-center px-4 py-2 rounded-full
-             bg-gray-100/80 dark:bg-gray-800/80
-             border border-brand/30 text-sm font-medium backdrop-blur-sm"
-    >
-      {{ tm('landingPage.letsCraft.talk.title') }}
-    </n-gradient-text>
+    <div class="flex flex-col items-start mb-3 gap-2">
+      <p class="text-2xl font-extrabold">
+        {{ tm('landingPage.letsCraft.talk.title') }}
+      </p>
 
-    <p
-      class="mt-6 mb-4
-             text-gray-900 dark:text-white leading-tight"
-    >
-      {{ tm('landingPage.letsCraft.talk.subtitle') }}
-</p>
+      <p class="f
+             text-gray-900 dark:text-white leading-tight">
+        {{ tm('landingPage.letsCraft.talk.subtitle') }}
+      </p>
+    </div>
 
-    <n-form
-      ref="formRef"
-      :model="formValue"
-      :rules="rules"
-      size="medium"
-      class="max-w-3xl mx-auto grid gap-6"
-    >
+
+    <n-form ref="formRef" :model="formValue" :rules="rules" size="medium" class="max-w-3xl mx-auto grid gap-6">
       <div class="grid md:grid-cols-2 gap-4">
         <n-form-item :label="tm('landingPage.letsCraft.talk.name.label')" path="user.name">
-          <n-input
-            v-model:value="formValue.user.name"
-            :placeholder="tm('landingPage.letsCraft.talk.name.placeholder')"
-            clearable
-          />
+          <n-input v-model:value="formValue.user.name" :placeholder="tm('landingPage.letsCraft.talk.name.placeholder')"
+            clearable />
         </n-form-item>
 
         <n-form-item :label="tm('landingPage.letsCraft.talk.email.label')" path="user.email">
-          <n-input
-            v-model:value="formValue.user.email"
-            :placeholder="tm('landingPage.letsCraft.talk.email.placeholder')"
-            clearable
-          />
+          <n-input v-model:value="formValue.user.email"
+            :placeholder="tm('landingPage.letsCraft.talk.email.placeholder')" clearable />
         </n-form-item>
       </div>
 
       <div class="grid md:grid-cols-2 gap-4">
         <n-form-item :label="tm('landingPage.letsCraft.talk.phone.label')" path="phone">
-          <n-input
-            v-model:value="formValue.phone"
-            :placeholder="tm('landingPage.letsCraft.talk.phone.placeholder')"
-            clearable
-          />
+          <n-input v-model:value="formValue.phone" :placeholder="tm('landingPage.letsCraft.talk.phone.placeholder')"
+            clearable />
         </n-form-item>
 
         <n-form-item :label="tm('landingPage.letsCraft.talk.company.label')" path="company">
-          <n-input
-            v-model:value="formValue.company"
-            :placeholder="tm('landingPage.letsCraft.talk.company.placeholder')"
-            clearable
-          />
+          <n-input v-model:value="formValue.company" :placeholder="tm('landingPage.letsCraft.talk.company.placeholder')"
+            clearable />
         </n-form-item>
       </div>
 
@@ -65,47 +42,35 @@
           {{ tm('landingPage.letsCraft.talk.services.label') }}
         </label>
         <n-space wrap>
-          <n-tag
-            v-for="item in tm('landingPage.letsCraft.talk.services.items')"
-            :key="item"
-            checkable
-            :checked="formValue.services.includes(item)"
-            @update:checked="toggleService(item)"
-          >
+          <n-tag v-for="item in tm('landingPage.letsCraft.talk.services.items')" :key="item" checkable
+            :checked="formValue.services.includes(item)" @update:checked="toggleService(item)">
             {{ item }}
           </n-tag>
         </n-space>
       </div>
 
       <n-form-item :label="tm('landingPage.letsCraft.talk.budget.label')" path="budget">
-        <n-select
-          v-model:value="formValue.budget"
-          :placeholder="tm('landingPage.letsCraft.talk.budget.placeholder')"
-          :options="budgetRange"
-          clearable
-        />
+        <n-select v-model:value="formValue.budget" :placeholder="tm('landingPage.letsCraft.talk.budget.placeholder')"
+          :options="budgetRange" clearable />
       </n-form-item>
 
       <n-form-item :label="tm('landingPage.letsCraft.talk.project.label')" path="project">
-        <n-input
-          type="textarea"
-          v-model:value="formValue.project"
-          :placeholder="tm('landingPage.letsCraft.talk.project.placeholder')"
-          clearable
-          autosize
-        />
+        <n-input type="textarea" v-model:value="formValue.project"
+          :placeholder="tm('landingPage.letsCraft.talk.project.placeholder')" clearable autosize />
       </n-form-item>
 
       <n-form-item>
-        <n-button
-          type="primary"
-          size="large"
-          block
-          @click="handleValidateClick"
-          class="border border-brand/30 !bg-brand/70 hover:!bg-brand/80"
-        >
+        <n-button icon-placement="right" :loading="loading" type="primary" size="large" block @click="handleValidateClick"
+          class=" !bg-brand hover:scale-101 rounded-md !text-black !font-semibold">
           {{ tm('landingPage.letsCraft.talk.buttons.send') }}
+
+          <template #icon>
+            <n-icon>
+              <SendIcon class="ml-1 -rotate-25"/>
+            </n-icon>
+          </template>
         </n-button>
+
       </n-form-item>
     </n-form>
   </div>
@@ -115,7 +80,7 @@
 import { ref } from "vue"
 import { useMessage } from "naive-ui"
 import { useI18n } from "vue-i18n"
-
+import { Send28Regular as SendIcon } from "@vicons/fluent"
 const { tm } = useI18n()
 const formRef = ref(null)
 const message = useMessage()

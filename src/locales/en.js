@@ -211,7 +211,7 @@ Today, we continue to push creative boundaries, embrace new technologies, and mo
 
         },
         letsCraft: {
-            vb:"Get in Touch",
+            vb: "Get in Touch",
             title: "Let's Create Something Amazing",
             description: "Ready to transform your brand? We'd love to hear about your project and explore how we can bring your vision to life.",
             craft: {
@@ -281,7 +281,132 @@ Today, we continue to push creative boundaries, embrace new technologies, and mo
                     send: "Send Message"
                 }
             },
-           
+
+        },
+        footer: {
+            header: {
+                title: "Our Studio Location",
+                subtitle: "123 Creative Avenue, Design District, NY 10001",
+                button: "Open in Maps"
+            },
+            cards: {
+                a: {
+                    description: "Creating vibrant visual experiences that transform brands and captivate audiences worldwide.",
+                    contact: {
+                        address: "123 Creative Avenue, NY 10001",
+                        phone: "+254768216484",
+                        email: "Steven.kariuki9@outlook.com"
+                    }
+
+                },
+                Services: [
+                    {
+                        title: "Brand Identity",
+                        link: "/about"
+                    },
+                    {
+                        title: "Web Design",
+                        link: "/services"
+                    },
+                    {
+                        title: "Mobile App Design",
+                        link: "/contact"
+                    },
+                    {
+                        title: "Motion Graphics",
+                        link: "/contact"
+                    },
+                    {
+                        title: "Package Design",
+                        link: "/contact"
+                    },
+                    {
+                        title: "Digital Marketing",
+                        link: "/contact"
+                    }
+                ],
+                Company: [
+                    {
+                        title: "About Us",
+                        link: "/about"
+                    },
+                    {
+                        title: "Our Process",
+                        link: "/careers"
+                    },
+                    {
+                        title: "Careers",
+                        link: "/careers"
+                    },
+                    {
+                        title: "Blog",
+                        link: "/blog"
+                    },
+                    {
+                        title: "Case Studies",
+                        link: "/case-studies"
+                    },
+                    {
+                        title: "Contact",
+                        link: "/case-studies"
+                    },
+                ],
+                Resources: [
+                    {
+                        title: "Design Resources",
+                        link: "/blog"
+                    },
+                    {
+                        title: "Brand Guidelines",
+                        link: "/case-studies"
+                    },
+                    {
+                        title: "Portfolio",
+                        link: "/guides"
+                    },
+                    {
+                        title: "Client Portal",
+                        link: "/blog"
+                    },
+                    {
+                        title: "Support Center",
+                        link: "/case-studies"
+                    },
+                    {
+                        title: "Free Consultation",
+                        link: "/guides"
+                    }
+                ]
+
+            },
+            subscribe:{
+                title: "Subscribe to our Newsletter",
+                description: "Stay updated with the latest news and offers from our studio.",
+                emailPlaceholder: "Enter your email address",
+                button: "Subscribe"
+            },
+            copyright:{
+                copy: "© 2024 Vi_brant's Designs. All rights reserved.",
+                links: [
+                    {
+                        title: "Privacy Policy",
+                        link: "/privacy-policy"
+                    },
+                    {
+                        title: "Terms of Service",
+                        link: "/terms-of-service"
+                    },
+                    {
+                        title: "Cookies Policy",
+                        link: "/cookies-policy"
+                    }
+                ]   
+            },
+            recognized: {
+                title: "Recognized by leading design organizations",
+                sites: ["Awwwards", "CSS Design Awards", "Webby Awards", "FWA", "DesignRush"]
+            }
+
         }
     }
 }
